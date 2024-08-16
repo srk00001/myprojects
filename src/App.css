@@ -1,38 +1,120 @@
-.App {
+.hero {
+  display: flex;
+  padding: 100px;
+}
+
+.hero-h1 {
+  font-size: 40px;
+  color: rebeccapurple;
+}
+
+.hero-h2 {
+  font-size: 40px;
+  color: orange;
+}
+
+.feat {
+  display: flex;
+  padding: 140px;
+  flex-direction: column;
+}
+
+.feat>h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.feat-left {
+  display: flex;
+  gap: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.feat-text {
+  margin-top: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.feat-left>img {
+  width: 500px;
+}
+
+.product {
   display: flex;
   flex-direction: column;
+  gap: 60px;
   align-items: center;
+}
+
+.product-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-bottom {
+  margin-top: 100px;
+}
+
+.product-top>h1,
+.product-bottom>h1,
+.contact>h1 {
+  text-align: center;
+}
+
+.product-card {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.product-carousel {
+  overflow: hidden;
+}
+
+.carousel {
+  width: 800px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+.img-car {
+  margin-left: 100px;
+  width: 600px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.contact {
+  margin-top: 150px;
+}
+
+.contact-bottom {
+  display: flex;
+  gap: 30px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-bottom>img {
+  width: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.contact-form {
+  width: 500px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 1060px) {
+
+  .hero,
+  .feat-left,
+  .contact-bottom,
+  .product-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
